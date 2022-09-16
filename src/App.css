@@ -1,0 +1,99 @@
+*{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #141519;
+
+}
+
+.card{
+
+  height: 23rem;
+  width: 23rem;
+  background: #1e2631;
+  border-radius: 2rem;
+
+}
+
+.fill{
+
+  margin-left: 2rem;
+  margin-top:  2rem;
+  background: #282e36;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #f07539;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  padding-left: 0.7rem;
+  padding-top: 0.7rem;
+  
+}
+
+h2{
+
+  margin: 2rem 0 1rem 2rem;
+  color: white;
+}
+
+p{
+  margin: 0 2rem 1rem 2rem;
+  color: gray;
+}
+
+.button-container{
+
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+
+.button{
+
+  background: #282e36;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: gray;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  border: none;
+  margin: 1rem 0.5rem 1rem 1rem;
+
+}
+
+.button:hover{
+
+  background: #f07539;
+  color: #fff;
+
+
+}
+
+.submit{
+  
+  width: 80%;
+  height: 10%;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  background: #f07539;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+}
+
+.submit:hover{
+
+  background: #000;
+  color:#f07539 ;
+}
