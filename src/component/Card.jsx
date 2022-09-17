@@ -7,7 +7,6 @@ import useStore from '../Store'
 const Card = () => {
 
   const isTrue = useStore((state) => state.isTrue) // selected from zustand store
-  
 
   return (
     <div className='card'>

@@ -2,10 +2,24 @@ import React from 'react'
 import {AiFillStar} from 'react-icons/ai'
 import useStore from '../Store'
 
+
 const FirstPage = () => {
 
+
   const getReview = useStore((state) => state.getReview); // getReview will trigger when button will be clicked
-  
+  const setNum = useStore((state) => state.setNum); // setNum will trigger
+
+  const Button = ({ number }) => {   // button
+    return (
+      <button
+        onClick={() => setNum(number)}
+        className="button"
+      >
+        {number}
+      </button>
+    )}
+
+
   return (
     <>
 <div className='fill'><AiFillStar/></div>
@@ -13,11 +27,15 @@ const FirstPage = () => {
 <p>Please let us know how we did with your support request. all feedback is appreciated to help us improve our offering!</p>
 <div className='button-container'>
 
-<button className='button'>1</button>
-<button className='button'>2</button>
-<button className='button'>3</button>
-<button className='button'>4</button>
-<button className='button'>5</button>
+
+
+<Button number={1} />
+<Button number={2} />
+<Button number={3} />
+<Button number={4} />
+<Button number={5} />
+
+
 </div>
 <button onClick={getReview}className='submit'>SUBMIT</button>
 
