@@ -1,6 +1,7 @@
 import React from 'react'
 import {AiFillStar} from 'react-icons/ai'
 import useStore from '../Store'
+import Button from './Button';
 
 
 const FirstPage = () => {
@@ -9,16 +10,7 @@ const FirstPage = () => {
   const getReview = useStore((state) => state.getReview); // getReview will trigger when button will be clicked
   const setNum = useStore((state) => state.setNum); // setNum will trigger
 
-  const Button = ({ number }) => {   // button
-    return (
-      <button
-        onClick={() => setNum(number)}
-        className="button"
-      >
-        {number}
-      </button>
-    )}
-
+ 
 
   return (
     <>
